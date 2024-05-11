@@ -1,12 +1,7 @@
-import { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { ProductContext } from "../context/ProductContext";
+import FeatureProduct from "./FeatureProduct";
 
 const HeroSection = () => {
-  const {loading,featureProducts,fetchProducts} = useContext(ProductContext);
-  useEffect(()=>{
-    fetchProducts();
-  },[]);
   return (
     <>
       <div className="w-full h-fit mx-auto flex flex-col my-16  items-center justify-around select-none sm:flex-row sm:w-4/5">
@@ -35,12 +30,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div>
-       {
-        loading ? (<div>Loading...</div>):(featureProducts.length === 0 ? (<div>
-          No Products Found
-        </div>):(featureProducts.map((product)=>(<div>{product.name}</div>))))
-       }
+      <div className="w-full h-full p-6 bg-slate-100 my-16">
+        <FeatureProduct />
       </div>
     </>
   );

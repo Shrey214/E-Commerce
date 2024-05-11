@@ -1,7 +1,9 @@
 const Contact = () => {
   return (
     <div>
-      <h2 className="my-8">Contact</h2>
+      <h2 className="font-bold text-4xl text-center py-10 h-28 capitalize">
+        Feel Free to Contact Us
+      </h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.5119343312035!2d75.76859461060234!3d23.18800687897081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396375003d6b2325%3A0x1e5d6d7d2b9d73c8!2sGopal%20Mandir!5e0!3m2!1sen!2sin!4v1715403866784!5m2!1sen!2sin"
         width="100%"

@@ -8,7 +8,7 @@ const Trusted = () => {
     <div className="w-full  bg-slate-100 my-10">
       <div className="w-11/12 h-full mx-auto flex flex-col items-center justify-center py-6">
         <p className="text-lg font-bold">Trusted By 1000+ Companies</p>
-        <div className="flex justify-between space-x-8 w-2/3 rounded-2xl mt-2">
+        <div className="flex flex-col items-center md:flex-row md:justify-between space-x-8 w-2/3 rounded-2xl mt-2">
           <div className="h-[80px]   flex items-center justify-center bg-slate-100 rounded-xl w-full">
             <div className="flex items-center space-x-2">
               <div className="flex items-center justify-center p-2 rounded-full bg-white text-slate-700 ">
